@@ -19,7 +19,7 @@ struct Colors: Template {
         СurlyBraces("extension UIColor") {
             EmptyLine()
             ForEach(names) { name in
-                СurlyBraces("public static var \(name) UIColor") {
+                СurlyBraces("public static var \(name): UIColor") {
                     Text("return UIColor(named: #function)")
                 }
                 EmptyLine()
